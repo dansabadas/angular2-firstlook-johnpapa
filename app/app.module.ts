@@ -6,14 +6,15 @@ import { StoryComponent } from './story.component';
 import { VehiclesComponent } from './vehicles.component';
 import { BindingComponent } from './binding.component';
 import { EventBindingComponent } from './eventbinding.component';
+import { CharacterComponent } from './character.component';
 
 import { VehicleService } from './vehicle.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [StoryComponent, VehiclesComponent, BindingComponent, EventBindingComponent],
+  declarations: [StoryComponent, VehiclesComponent, BindingComponent, EventBindingComponent, CharacterComponent],
   providers: [VehicleService],
-  bootstrap: [VehiclesComponent],
+  bootstrap: [CharacterComponent],
 })
 export class AppModule { }
 
